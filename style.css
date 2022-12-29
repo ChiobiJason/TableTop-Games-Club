@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+#hero,
+#description,
+#mission,
+#desc-txt,
+#mission-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  flex-direction: column;
+  background-image: url(./images/hero-bg.png);
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+#hero > img {
+  width: 10em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  background: white;
+  width: 8em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logo-img {
+  width: 8em;
+}
+
+#hero > h2 {
+  font-weight: 900;
+}
+
+.f-h,
+.desc-head,
+.mission-head {
+  color: black;
+  background: white;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+.s-h {
+  background: black;
+  padding: 10px 60px;
+}
+
+#description,
+#mission {
+  flex-direction: row;
+  background: black;
+  max-height: 30em;
+  margin-bottom: 40px;
+}
+
+#desc-txt,
+#mission-txt {
+  flex-direction: column;
+  width: 50%;
+  height: 30em;
+}
+
+#desc-img,
+#mission-img {
+  background: white;
+  height: 30em;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+#desc-img {
+  background-image: url(./images/monopoly.png);
+}
+
+#mission-img {
+  background-image: url(./images/club-members.jpg);
+}
+
+#desc-txt > p,
+#mission-txt > p {
+  text-align: center;
+  margin: 0 10px;
+}

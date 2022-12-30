@@ -8,8 +8,10 @@
 #hero,
 #description,
 #mission,
+#contact,
 #desc-txt,
-#mission-txt {
+#mission-txt,
+#contact-txt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +29,12 @@
 #hero > img {
   width: 10em;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
+}
+
+.u-a-logo {
+  border-radius: 50px;
 }
 
 .logo {
@@ -49,7 +55,8 @@
 
 .f-h,
 .desc-head,
-.mission-head {
+.mission-head,
+.contact-head {
   color: black;
   background: white;
   padding: 10px 30px;
@@ -62,7 +69,8 @@
 }
 
 #description,
-#mission {
+#mission,
+#contact {
   flex-direction: row;
   background: black;
   max-height: 30em;
@@ -70,14 +78,16 @@
 }
 
 #desc-txt,
-#mission-txt {
+#mission-txt,
+#contact-txt {
   flex-direction: column;
   width: 50%;
   height: 30em;
 }
 
 #desc-img,
-#mission-img {
+#mission-img,
+#contact-img {
   background: white;
   height: 30em;
   width: 50%;
@@ -93,8 +103,73 @@
   background-image: url(./images/club-members.jpg);
 }
 
+#contact-img {
+  background-image: url(./images/magic.png);
+}
+
 #desc-txt > p,
-#mission-txt > p {
+#mission-txt > p,
+#contact-txt > p {
   text-align: center;
   margin: 0 10px;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 700;
+}
+
+footer > a {
+  text-decoration: none;
+}
+
+/* Media Quiries */
+@media only screen and (min-width: 800px) {
+  .f-h,
+  .s-h {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #hero > img,
+  .logo,
+  .logo-img {
+    width: 6em;
+  }
+  .u-a-logo {
+    border-radius: 25px;
+  }
+  #description,
+  #mission,
+  #contact {
+    flex-direction: column;
+    min-height: 30em;
+  }
+  #desc-txt,
+  #mission-txt,
+  #contact-txt {
+    max-height: 15em;
+  }
+  #desc-txt > p,
+  #mission-txt > p,
+  #contact-txt > p {
+    margin: 0 0;
+  }
+  #desc-img,
+  #desc-txt,
+  #mission-img,
+  #mission-txt,
+  #contact-img,
+  #contact-img {
+    width: 100%;
+  }
+  .desc-head,
+  .mission-head,
+  .contact-head {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
 }
